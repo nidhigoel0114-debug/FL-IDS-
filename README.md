@@ -12,3 +12,8 @@ Outcomes of the project
 2.Robustness against untrusted or malicious clients
 3.Privacy-preserving training without raw data sharing
 4.Statistically validated performance gains
+
+Dataset links
+1.CICIDS-2017: https://www.kaggle.com/datasets/cicdataset/cicids2017
+2.UNSW-NB15: https://www.kaggle.com/datasets/mrwellsdavid/unsw-nb15
+3.Bot-IoT:https://www.kaggle.com/datasets/gauravduttakiit/bot-iot
