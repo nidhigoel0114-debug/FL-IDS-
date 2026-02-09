@@ -17,3 +17,10 @@ Dataset links
 1.CICIDS-2017: https://www.kaggle.com/datasets/cicdataset/cicids2017
 2.UNSW-NB15: https://www.kaggle.com/datasets/mrwellsdavid/unsw-nb15
 3.Bot-IoT:https://www.kaggle.com/datasets/gauravduttakiit/bot-iot
+4.KDD: https://www.kaggle.com/datasets/galaxyh/kdd-cup-1999-data
+
+Reference links
+1.CICIDS-2017: https://www.unb.ca/cic/datasets/ids-2017.html
+2.UNSW-NB15: https://research.unsw.edu.au/projects/unsw-nb15-dataset
+3.Bot-IoT:https://research.unsw.edu.au/projects/bot-iot-dataset
+4. KDD: http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html
