@@ -1,26 +1,38 @@
-**ZT-TrustFed – Privacy-Preserving Federated Intrusion Detection System**
-This project proposes ZT-TrustFed, a Zero-Trust, privacy-preserving Federated Learning (FL) framework for Intrusion Detection Systems (IDS). The goal is to detect cyber-attacks accurately without sharing raw network data, thereby preserving data privacy while maintaining high detection performance.Unlike centralized IDS approaches, ZT-TrustFed trains a deep learning model collaboratively across multiple clients (simulated organizations or network nodes). Each client performs local training, and only model updates are shared with the central server. To enhance security and reliability, the system integrates three key mechanisms:
+**Trust-Aware Privacy-Preserving Federated Learning for Robust Cross-Dataset Network Intrusion Detection**
+This project implements a Trust-Aware Privacy-Preserving Federated Learning framework for Network Intrusion Detection Systems (NIDS). The system enables multiple distributed clients to collaboratively train a global model without sharing raw data, ensuring data privacy and secure model aggregation.
 
-1.Zero-Trust Principle – No client is assumed to be trustworthy by default. Each client is continuously evaluated using a dynamic trust score based on its behavior during training.
-2.Trust-Aware Aggregation – A Trust-Krum aggregation strategy is used to reduce the impact of unreliable or malicious clients, improving robustness against poisoning and Byzantine attacks.
-3.Privacy Preservation – Differential Privacy (DP) noise is added to model gradients to prevent leakage of sensitive information from client updates.
+The framework introduces a trust-based aggregation mechanism that evaluates the reliability of client updates using a trust score derived from accuracy contribution, update stability, and similarity to the global model. This helps reduce the impact of unreliable or malicious clients during federated training.
 
-The framework also includes a lightweight ledger mechanism to log aggregation events, improving transparency and auditability of the federated process.Extensive experiments demonstrate that ZT-TrustFed outperforms standard FedAvg in terms of accuracy, F1-score, and robustness, while maintaining privacy guarantees. Statistical validation using paired t-test and Wilcoxon signed-rank test confirms that the performance improvements are statistically significant.
+To further strengthen security and robustness, the model incorporates differential privacy, adversarial robustness testing, and cross-dataset evaluation. Experiments are conducted on multiple intrusion detection datasets including CICIDS2017, UNSW-NB15, and Bot-IoT, demonstrating strong generalization across heterogeneous network environments.
 
-Outcomes of the project
-1.High intrusion detection accuracy with strong class balance
-2.Robustness against untrusted or malicious clients
-3.Privacy-preserving training without raw data sharing
-4.Statistically validated performance gains
+**Key features include:**
 
-Dataset links
+Federated learning architecture for decentralized IDS training
+Trust-weighted model aggregation to mitigate unreliable client updates
+Differential privacy mechanisms for enhanced data protection
+Adversarial robustness evaluation using FGSM attacks
+Cross-dataset intrusion detection performance analysis
+Comprehensive experimental evaluation with ablation studies
+
+The proposed approach improves security, privacy, and robustness of collaborative intrusion detection systems while maintaining high detection accuracy across diverse network datasets.
+
+**Outcomes of the project**
+Developed a Trust-Aware Federated Learning framework for distributed network intrusion detection without sharing raw data.
+Implemented trust-weighted model aggregation to evaluate and prioritize reliable client updates during federated training.
+Integrated privacy-preserving mechanisms using differential privacy to protect sensitive network data.
+Demonstrated robustness against adversarial attacks through FGSM-based adversarial evaluation.
+Achieved strong cross-dataset generalization performance across CICIDS2017, UNSW-NB15, and Bot-IoT datasets.
+Conducted ablation studies to analyze the contribution of trust scoring, privacy mechanisms, and robustness techniques.
+Provided comprehensive evaluation metrics including accuracy, balanced accuracy, macro F1-score, ROC-AUC, and adversarial robustness.
+
+**Dataset links**
 1.CICIDS-2017: https://www.kaggle.com/datasets/cicdataset/cicids2017
 2.UNSW-NB15: https://www.kaggle.com/datasets/mrwellsdavid/unsw-nb15
 3.Bot-IoT:https://www.kaggle.com/datasets/gauravduttakiit/bot-iot
-4.KDD: https://www.kaggle.com/datasets/galaxyh/kdd-cup-1999-data
 
-Reference links
+
+**Reference links**
 1.CICIDS-2017: https://www.unb.ca/cic/datasets/ids-2017.html
 2.UNSW-NB15: https://research.unsw.edu.au/projects/unsw-nb15-dataset
 3.Bot-IoT:https://research.unsw.edu.au/projects/bot-iot-dataset
-4. KDD: http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html
+
